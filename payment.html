@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+                <div class="ticket-main-header">
+                    <ul>
+                        <li><a href="details.html"><img src="./images/4829864_arrow_back_left_icon.png" alt="Hikkaduwa page" width="20" height="20"></a></li>
+                    </ul>
+                    <h1>BUY TICKETS</h1>
+                </div>
+                <nav>
+                    <div class="t-topnav">
+                        <ul>
+                            <li><a href="#">Tickets  ></a></li>
+                            <li><a href="#">Details  </a></li>
+                            <li> <a href="#">Payment  ></a></li>
+                            <li><a href="#">Confirmation  ></a></li> 
+                           
+                        </ul>
+                    </div>  
+                </nav>
+    </header>
+    <hr>
+    <br>
+    <section class="container-form-column">
+        <div class="form-column">
+            <div class="main-text-ticketPage">
+                <h2>Payment details</h2>
+            </div>
+                    <br>
+                    <form id="paymentForm">
+                        <div class="paymentForm">
+                            <div class="select-box">
+                                <div class="select-box">
+                                    <div>
+                                        <label for="cardNumber" class="formLabel"> Card Number </label>
+                                        <input type="text" name="cardNumber" id="cardNumber" class="formInput" required>
+                                        <p class="error"></p>
+                                    </div>
+                                </div>
+                                <div class="select-box">
+                                    <div>
+                                        <label for="expiryDate" class="formLabel"> Expiry Date </label>
+                                        <input type="text" name="expiryDate" id="expiryDate" class="formInput" 
+                                        placeholder="dd/mm"
+                                        required>
+                                        <p class="error"></p>
+                                    </div>
+                                </div>
+                          
+                                <div class="select-box">
+                                    <div>
+                                        <label for="cvc" class="formLabel"> CVC / CVV </label>
+                                        <input type="number"name="cvc" id="cvc" class="formInput" required>
+                                        <p class="error"></p>
+                                    </div>
+                                </div>
+                                <div class="select-box">
+                                    <div>
+                                        <label for="cardName" class="formLabel"> Name on Card </label>
+                                        <input type="text" name="cardName" id="cardName" class="formInput" required>
+                                        <p class="error"></p>
+                                    </div>
+                                </div>
+                    
+                         
+                        </div>
+                        </div>
+                        </form>
+        </div>
+        <div class="column">
+            <div class="main-text-ticketPage">
+                <h2>Summary Table</h2>
+            </div>
+                <div class="summaryTable">
+            <div>
+                <h6><a href="./details.html">Cancel and return</a></h6>
+            </div>
+            <div>
+                <h4>Booking Recap</h4></div>
+                <table class="recapTable" id="recapTable">
+                    <tr>
+                        <td>Date</td>
+                        <td id="selected-date"> current_date </td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td id="selected-time">07.00 am to 08.00 am</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td id="selected-slot">1 hrs ( 01 Normal : 00 Peak)</td>
+                    </tr>
+                    <tr class="ticketRow">
+                        <td>Tickets</td>
+                        <td>Charges</td>
+                    </tr>
+                    <tr>
+                        <td>1 Foreigner Adult</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr class="totalRow">
+                        <td><b>Total Payable</b></td>
+                        <td><b class="green">$10</b></td>
+                    </tr>
+                </table>
+
+                </div>
+            </div>
+        </div>
+       
+        </div>
+                    
+    </section>
+            <div>
+                <button class="BookNowbtn" onclick="validatePaymentForm()">Pay</button>
+            </div>
+           
+            <footer class="footer">
+                <div class="inner-footer">
+                        <div class="quik-links">
+                            <ul>
+                                <li class="quik-items"><a href="HomePage.html">Home</a></li>
+                                <li class="quik-items"><a href="TurtleCategories.html">Turtle Categories</a></li>
+                                <li class="quik-items"><a href="HTHatchery.html">Hikkaduwa Turtle Hatchery</a></li>
+                                <li class="quik-items"><a href="Threats.html">Threats</a></li>
+                                <li class="quik-items"><a href="OtherTHatcheries.html">Other Turtle Hatcheries</a></li>
+                                <li class="quik-items"><a href="Shop.html">Shop</a></li>
+                                <li class="quik-items"><a href="Donate.html">Donation</a></li>
+                            </ul>
+                            
+                        </div>
+                </div>
+                <div class="outter-footer">
+                    copyright &copy; Web Coding Pro. All Rights Reserved
+                </div> 
+                
+    <!-- 
+        
+    -->
+            </footer>
+            <script src="./mainPayment.js"></script>
+    
+
+</body>
+</html>

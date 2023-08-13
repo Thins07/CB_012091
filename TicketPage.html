@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+                <div class="ticket-main-header">
+                    <ul>
+                        <li><a href="HTHatchery.html"><img src="./images/4829864_arrow_back_left_icon.png" alt="Hikkaduwa page" width="20" height="20"></a></li>
+                    </ul>
+                    <h1>BUY TICKETS</h1>
+                </div>
+                <nav>
+                    <div class="t-topnav">
+                        <ul>
+                            <li><a href="#">Tickets  ></a></li>
+                            <li><a href="#">Details  </a></li>
+                            <li> <a href="#">Payment  ></a></li>
+                            <li><a href="#">Confirmation  ></a></li> 
+                           
+                        </ul>
+                    </div>  
+                </nav>
+    </header>
+    <hr>
+    <br>
+        <section class="container-column">
+            <div class=column>
+
+			<div class="column-1">
+                    <div class="Left">
+                <div class="main-text-ticketPage">
+                    <h2>When are you coming?</h2>
+                    <h4>select a date</h4>
+                </div>
+                <div class="container">
+                        <input type="date" id="theDate">
+        </div>
+                </div>
+
+                <div class="Left_2">
+                    <div class="main-text-ticketPage">
+                        <h2>Whos coming?</h2>
+                        <h4>select the number of tickets for guests</h4>
+                        <br>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><label for="quantity" id="SLAdult">SL Adult</label>
+                                <input type="number" id="quantity-1" name="quantity" min="1" max="10"></li>
+                            <li><label for="quantity" id="SLChild">SL Child</label>
+                                <input type="number" id="quantity-2" name="quantity" min="1" max="10"></li>
+                            <li><label for="quantity" id="FAdult">Foreigner Adult</label>
+                                <input type="number" id="quantity-3" name="quantity" min="1" max="10" value="1"></li>
+                            <li><label for="quantity" id="FChild">Foreigner Child</label>
+                                <input type="number" id="quantity-4" name="quantity" min="1" max="10"></li>
+                            <li><label for="quantity" id="Infant">Infant</label>
+                                <input type="number" id="quantity-5" name="quantity" min="1" max="10"></li>
+                        </ul>
+                    </div>
+                </div> 
+                <br>
+                <div class="Left_3">
+                        <div class="main-text-ticketPage">
+                            <h2>Duration</h2>
+                            <h4>●	The Hikkaduwa turtle hatchery will operate all seven days of the week from 07.00 am to 6.00 pm<br>
+                            ●	Please note that every day from 10.00 am to 1.00 pm and from 3.00 pm to 6.00 pm will be considered as Peak hours.</h4>
+                            <ul>
+                            <br>
+
+                        </div>
+                        <div class="info">
+                            <table class="categoryTable">
+                                <tr><th>Category</th><th>Charge</th></tr>
+                                <tr><td>One Normal hour for Foreigner Adult</td><td>10 USD</td></tr>
+                                <tr><td>One Peak hour for Foreigner Adult</td><td>13 USD</td></tr>
+                                <tr><td>One Normal hour for Foreigner Child</td><td>5 USD</td></tr>
+                                <tr><td>One Peak hour for Foreigner Child</td><td>8 USD</td></tr>
+                                <tr><td>One Normal hour for SL Adult</td><td>4 USD</td></tr>
+                                <tr><td>One Peak hour for SL Adult</td><td>6 USD</td></tr>
+                                <tr><td>One Normal hour for SL Child</td><td>2 USD</td></tr>
+                                <tr><td>One Peak hour for SL Child</td><td>3 USD</td></tr>
+                                <tr><td>Per hour for SL or Foreign infants(under 4yrs)</td><td>0 USD</td></tr>
+                                
+                            </table>
+                            <div class="dropdown">
+                                <button onclick="myFunction()"class="dropbtn">Click to choose time slot/s</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <select name="timeSlot" id="timeSlot" multiple>
+                                        <option value="1" selected >07.00 am - 08.00 am</option>
+                                        <option value="2">08.00 am - 09.00 am</option>
+                                        <option value="3">09.00 am - 10.00 am</option>
+                                        <option value="4">10.00 am - 11.00 am (Peak)</option>
+                                        <option value="5">11.00 am - 12.00 pm (Peak)</option>
+                                        <option value="6">12.00 pm - 1.00 pm (Peak)</option>
+                                        <option value="7">1.00 pm - 2.00 pm</option>
+                                        <option value="8">2.00 pm - 3.00 pm</option>
+                                        <option value="9">3.00 pm - 4.00 pm (Peak)</option>
+                                        <option value="10">4.00 pm - 5.00 pm (Peak)</option>
+                                        <option value="11">5.00 pm 6.00 pm (Peak)</option>
+                                    </select>
+                                </div>
+                              </div>   
+                </div> 
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </body>
+            <div class="column-2">
+                <div class="main-text-ticketPage">
+                    <h2>Summary Table</h2>
+                </div>
+                    <div class="summaryTable">
+                <div>
+                    <h6><a href="./HTHatchery.html">Cancel and return</a></h6>
+                </div>
+                <div>
+                    <h4>Booking Recap</h4></div>
+                        <table class="recapTable" id="recapTable">
+                            <tr>
+                                <td>Date</td>
+                                <td id="selected-date"> current_date </td>
+                            </tr>
+                            <tr>
+                                <td>Time</td>
+                                <td id="selected-time">07.00 am to 08.00 am</td>
+                            </tr>
+                            <tr>
+                                <td>Duration</td>
+                                <td id="selected-slot">1 hrs ( 01 Normal : 00 Peak)</td>
+                            </tr>
+                            <tr class="ticketRow">
+                                <td>Tickets</td>
+                                <td>Charges</td>
+                            </tr>
+                            <tr>
+                                <td id="categoryName">1 <span>Foreigner Adult</span></td>
+                                <td id="charge">$10</td>
+                            </tr>
+                            <tr class="totalRow">
+                                <td><b>Total Payable</b></td>
+                                <td id="payable"><b class="green">$10</b></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+		</section>
+        <section></section>
+            
+     
+            
+            <div>
+               <a href="./details.html"><input type="button" value="Continue with purchase" id="purchase" class="BookNowbtn" disabled></a>
+            </div> 
+    </section>
+                   
+            <footer class="footer">
+                <div class="inner-footer">
+                        <div class="quik-links">
+                            <ul>
+                                <li class="quik-items"><a href="HomePage.html">Home</a></li>
+                                <li class="quik-items"><a href="TurtleCategories.html">Turtle Categories</a></li>
+                                <li class="quik-items"><a href="HTHatchery.html">Hikkaduwa Turtle Hatchery</a></li>
+                                <li class="quik-items"><a href="Threats.html">Threats</a></li>
+                                <li class="quik-items"><a href="OtherTHatcheries.html">Other Turtle Hatcheries</a></li>
+                                <li class="quik-items"><a href="Shop.html">Shop</a></li>
+                                <li class="quik-items"><a href="Donate.html">Donation</a></li>
+                            </ul>
+                            
+                        </div>
+                </div>
+                
+                <div class="outter-footer">
+                    copyright &copy; Web Coding Pro. All Rights Reserved
+                </div> 
+    <!-- 
+        
+    -->
+            </footer>
+            <script src="./mainTickets.js"></script>
+    
+
+</body>
+</html>
